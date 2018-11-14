@@ -1,0 +1,22 @@
+<!ELEMENT result (users|error)>
+<!ELEMENT users (user*)>
+<!ELEMENT user (name, description,location,reputation,upvotes,downvotes, badges, top_post)>
+<!ELEMENT error (#PCDATA)>
+<!-- name element is DisplayName’s user -->
+<!ELEMENT name (#PCDATA)>
+<!-- description element is AboutMe’s user -->
+<!ELEMENT description (#PCDATA)>
+<!-- location element is Location’s user -->
+<!ELEMENT location (#PCDATA)>
+<!-- upvotes element is UpVotes’s user -->
+<!ELEMENT upvotes (#PCDATA)>
+<!-- downvotes element is DownVotes’s user -->
+<!ELEMENT downvotes (#PCDATA)>
+<!-- reputation element is Reputation’s user -->
+<!ELEMENT reputation (#PCDATA)>
+<!ATTLIST user id CDATA #REQUIRED>
+<!ELEMENT badges (badge*)>
+<!-- badge element is Name’s badge -->
+<!ELEMENT badge (#PCDATA)>
+<!-- top_post element is Body’s post -->
+<!ELEMENT top_post (#PCDATA)>
